@@ -26,14 +26,14 @@ const setupTranslations = () => {
     }
 };
 
-const EXTENSION_ID = 'myExtension';
+const EXTENSION_ID = '<<extensionID>>';
 
 /**
  * URL to get this extension as a module.
  * When it was loaded as a module, 'extensionURL' will be replaced a URL which is retrieved from.
  * @type {string}
  */
-let extensionURL = 'https://githubAccount.github.io/xcx-my-extension/dist/myExtension.mjs';
+let extensionURL = 'https://<<account>>.github.io/<<repo>>/dist/<<extensionID>>.mjs';
 
 /**
  * Scratch 3.0 blocks for example of Xcratch.
@@ -53,8 +53,8 @@ class ExtensionBlocks {
      */
     static get EXTENSION_NAME () {
         return formatMessage({
-            id: 'myExtension.name',
-            default: ''My',
+            id: '<<extensionID>>.name',
+            default: '<<extensionName>>',
             description: 'name of the extension'
         });
     }
@@ -84,7 +84,7 @@ class ExtensionBlocks {
     }
 
     /**
-     * Construct a set of blocks for 'My.
+     * Construct a set of blocks for <<extensionName>>.
      * @param {Runtime} runtime - the Scratch 3.0 runtime.
      */
     constructor (runtime) {
@@ -117,7 +117,7 @@ class ExtensionBlocks {
                     blockType: BlockType.REPORTER,
                     blockAllThreads: false,
                     text: formatMessage({
-                        id: 'myExtension.doIt',
+                        id: '<<extensionID>>.doIt',
                         default: 'do it [SCRIPT]',
                         description: 'execute javascript for example'
                     }),

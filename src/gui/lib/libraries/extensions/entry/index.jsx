@@ -17,28 +17,28 @@ let formatMessage = messageData => messageData.defaultMessage;
 const entry = {
     get name () {
         return formatMessage({
-            id: 'myExtension.entry.name',
-            defaultMessage: ''My',
+            id: '<<extensionID>>.entry.name',
+            defaultMessage: '<<extensionName>>',
             description: 'name of the extension'
         });
     },
-    extensionId: 'myExtension',
-    extensionURL: 'https://githubAccount.github.io/xcx-my-extension/dist/myExtension.mjs',
-    collaborator: 'githubAccount',
+    extensionId: '<<extensionID>>',
+    extensionURL: 'https://<<account>>.github.io/<<repo>>/dist/<<extensionID>>.mjs',
+    collaborator: '<<account>>',
     iconURL: iconURL,
     insetIconURL: insetIconURL,
     get description () {
         return formatMessage({
             defaultMessage: 'an extension for Xcratch',
             description: 'Description for this extension',
-            id: 'myExtension.entry.description'
+            id: '<<extensionID>>.entry.description'
         });
     },
     featured: true,
     disabled: false,
     bluetoothRequired: false,
     internetConnectionRequired: false,
-    helpLink: 'https://githubAccount.github.io/xcx-my-extension/',
+    helpLink: 'https://<<account>>.github.io/<<repo>>/',
     setFormatMessage: formatter => {
         formatMessage = formatter;
     },

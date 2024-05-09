@@ -1,14 +1,14 @@
 {
   "en": {
-    "myExtension.entry.name": "'My",
-    "myExtension.entry.description": "Description of this extension"
+    "<<extensionID>>.entry.name": "<<extensionName>>",
+    "<<extensionID>>.entry.description": "Description of this extension"
   },
   "ja": {
-    "myExtension.entry.name": "'My",
-    "myExtension.entry.description": "拡張機能の説明"
+    "<<extensionID>>.entry.name": "<<extensionName>>",
+    "<<extensionID>>.entry.description": "拡張機能の説明"
   },
   "ja-Hira": {
-    "myExtension.entry.name": "'My",
-    "myExtension.entry.description": "かくちょうきのうのせつめい"
+    "<<extensionID>>.entry.name": "<<extensionName>>",
+    "<<extensionID>>.entry.description": "かくちょうきのうのせつめい"
   }
 }

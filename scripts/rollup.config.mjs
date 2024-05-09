@@ -17,7 +17,7 @@ const blockFile = path.resolve(blockSrcDir, 'index.js');
 const entrySrcDir = path.resolve(process.cwd(), './src/gui/lib/libraries/extensions/entry');
 const entryFile = path.resolve(entrySrcDir, 'index.jsx');
 // path for output
-const moduleName = 'myExtension';
+const moduleName = '<<extensionID>>';
 const outputDir = path.resolve(process.cwd(), './dist');
 fs.emptyDirSync(outputDir);
 const moduleFile = path.resolve(outputDir, `${moduleName}.mjs`);
